@@ -1,0 +1,47 @@
+---
+import PrototypeLayout from '../layouts/PrototypeLayout.astro';
+---
+
+<PrototypeLayout
+  title="Toybox Prototypes"
+  description="Runnable public prototype references from Flora May dela Cruz's Toybox."
+>
+  <header class="prototype-header">
+    <p class="eyebrow">Public prototypes</p>
+    <h1>Toybox prototype references</h1>
+    <p class="prose muted">
+      Small, inspectable prototype references connected to floramaydc.com. They
+      are meant for learning, adaptation, and conversation, not production reuse
+      without your own review.
+    </p>
+    <div class="button-row">
+      <a class="button-link primary" href="https://floramaydc.com/toybox/prototypes/">View live prototypes</a>
+      <a class="button-link" href="https://floramaydc.com/toybox/">Explore the Toybox</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="prototype-list-heading">
+    <h2 id="prototype-list-heading">Available prototypes</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Fluent theme toggle</h3>
+        <p class="muted">A light/dark theme switcher using public Fluent UI React components.</p>
+        <p><a href="/fluent-theme-toggle/">Open local demo</a></p>
+      </article>
+      <article class="card">
+        <h3>Demo days 0 to 14 reference</h3>
+        <p class="muted">A staged maturity reference that keeps one interface stable while product signals evolve.</p>
+        <p><a href="/demo-days-0-reference/">Open local demo</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="run-heading">
+    <h2 id="run-heading">Run locally</h2>
+    <pre><code>git clone https://github.com/floramaydc/toybox-prototypes.git
+cd toybox-prototypes
+npm install
+npm run dev</code></pre>
+    <p class="muted">Then open the local URL Astro prints in your terminal, usually <code>http://localhost:4321</code>.</p>
+  </section>
+</PrototypeLayout>

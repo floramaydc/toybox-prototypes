@@ -1,0 +1,30 @@
+---
+import PrototypeLayout from '../layouts/PrototypeLayout.astro';
+import FluentShowcase from '../components/FluentShowcase.tsx';
+---
+
+<PrototypeLayout
+  title="Fluent theme toggle prototype"
+  description="A live demo of public Fluent UI React components rendering in light and dark mode."
+>
+  <header class="prototype-header">
+    <p class="eyebrow">Prototype / Fluent theme toggle</p>
+    <h1>Fluent theme toggle</h1>
+    <p class="prose muted">
+      The same components in light and dark, switched in place. Toggle in the
+      top-right of the demo. Your choice is remembered on this device.
+    </p>
+    <p class="prose muted">
+      Built with the public <a href="https://github.com/microsoft/fluentui" target="_blank" rel="noopener noreferrer">@fluentui/react-components</a>
+      package. No internal Microsoft code or assets are included.
+    </p>
+  </header>
+
+  <div class="panel">
+    <FluentShowcase client:only="react" />
+  </div>
+
+  <footer class="prototype-footer">
+    <p><a href="https://floramaydc.com/toybox/fluent-theme-toggle/">Read the Toybox write-up</a></p>
+  </footer>
+</PrototypeLayout>
